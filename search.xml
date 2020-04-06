@@ -1,9 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>地图</title>
+    <url>//chinamap/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>实时路况信息,绿色的代表通畅<img src="%5Cchinamap%5C%E5%AE%9E%E6%97%B6%E8%B7%AF%E5%86%B5.PNG" alt="实时路况"></p>
+<p>驾车路线规划：</p>
+<p><img src="%5Cchinamap%5Cjiache.PNG" alt="jiache"></p>
+<p>骑自行车路线规划：</p>
+<p><img src="%5Cchinamap%5Criding.PNG" alt="riding"></p>
+<p>步行路线规划：</p>
+<p><img src="%5Cchinamap%5Cbuxing.PNG" alt="buxing"></p>
+<p>定位：</p>
+<p><img src="%5Cchinamap%5C%E5%AE%9A%E4%BD%8D.PNG" alt="定位"></p>
+]]></content>
+      <tags>
+        <tag>map</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>music</title>
+    <url>//music/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>
+        <div id="aplayer-OMpgHzad" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-OMpgHzad"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "桥边姑娘",
+              author: "兔子牙",
+              url: "/music/花僮_桥边姑娘.mp3",
+              pic: "/music/pic.jpg",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
+
+
+]]></content>
+  </entry>
+  <entry>
     <title>jsonb</title>
     <url>//photos/</url>
-    <content><![CDATA[<p>JSON-B是用于将Java对象与JSON消息相互转换的标准绑定层。它定义了一种默认的映射算法，用于将现有的Java类转换为JSON。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>JSON-B是用于将Java对象与JSON消息相互转换的标准绑定层。它定义了一种默认的映射算法，用于将现有的Java类转换为JSON。</p>
 <p>添加依赖：</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- JSON-P --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.glassfish<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jakarta.json<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.1.5<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">scope</span>&gt;</span>runtime<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- JSON-B API --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>jakarta.json.bind<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jakarta.json.bind-api<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- Yasson (JSON-B implementation) --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.eclipse<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>yasson<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0.3<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">scope</span>&gt;</span>runtime<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -44,7 +90,7 @@
   <entry>
     <title>分布式文件系统</title>
     <url>//fastdfs/</url>
-    <content><![CDATA[<h5 id="分布式文件系统"><a href="#分布式文件系统" class="headerlink" title="分布式文件系统"></a>分布式文件系统</h5><p>FastDFS是一个开源的高性能分布式文件系统。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h5 id="分布式文件系统"><a href="#分布式文件系统" class="headerlink" title="分布式文件系统"></a>分布式文件系统</h5><p>FastDFS是一个开源的高性能分布式文件系统。</p>
 <p>它的主要功能包括:文件存储、文件同步和文件访问(文件上传和文件下载)，它可以解决高容量和负载平衡问题。</p>
 <p>适合图片和视频网站</p>
 <p>FastDFS有两个角色:</p>
@@ -76,7 +122,7 @@
   <entry>
     <title>gallery</title>
     <url>//gallery/</url>
-    <content><![CDATA[<p>过年期间瞎做的一些东西，有手机APP，也有h5</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>过年期间瞎做的一些东西，有手机APP，也有h5</p>
 <p><img src="%5Cimages%5C%E9%A6%96%E9%A1%B5.png" alt="首页"></p>
 <p>这个是手机APP，聊天使用的WebSocket,能够发送语音，图片，还有语音输入</p>
 <p><img src="%5Cimages%5C%E8%AF%AD%E9%9F%B3%E8%BE%93%E5%85%A5.png" alt="语音输入"></p>
@@ -91,7 +137,7 @@
   <entry>
     <title>SpringCloud</title>
     <url>//SpringCloud/</url>
-    <content><![CDATA[<p>SpringCloud很流行，但是公司是否要真的选择SpringCloud 微服务架构还要根据自身情况</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>SpringCloud很流行，但是公司是否要真的选择SpringCloud 微服务架构还要根据自身情况</p>
 <p>不可盲目追求。有些小项目，根本就不需要使用微服务，如果使用微服务反而会造成更大成本。</p>
 <p>SpringCloud在开发过程中，很多微服务都要启动，有些公司电脑配置也不行，很多公司还是8G内存配置，如果要启动多个项目，机器非常卡，本来SpringBoot，SpringCloud就很吃内存。在一个8g内存的笔记本电脑上同时启动，之前做过一个项目就是8g内存的笔记本启动4~5个微服务，还打开的数据库连接工具，浏览器等，不过jvm 参数调下还是可以的跑的很好的，毕竟只是本地跑。</p>
 <p>现在eureka，feign，zull, hystirx, config 这些都是过时了，可能有些公司还是在用。</p>
@@ -103,7 +149,7 @@
   <entry>
     <title>SpringBoot</title>
     <url>//SpringBoot/</url>
-    <content><![CDATA[<p>SpringBoot启动流程</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>SpringBoot启动流程</p>
 <p>首先运行SpringApplication的run方法，会执行如下这段代码</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> ConfigurableApplicationContext <span class="title">run</span><span class="params">(String... args)</span> </span>&#123;</span><br><span class="line">		StopWatch stopWatch = <span class="keyword">new</span> StopWatch();</span><br><span class="line">		stopWatch.start();</span><br><span class="line">		ConfigurableApplicationContext context = <span class="keyword">null</span>;</span><br><span class="line">		Collection&lt;SpringBootExceptionReporter&gt; exceptionReporters = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">		configureHeadlessProperty();</span><br><span class="line">		SpringApplicationRunListeners listeners = getRunListeners(args);</span><br><span class="line">		listeners.starting();</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			ApplicationArguments applicationArguments = <span class="keyword">new</span> DefaultApplicationArguments(args);</span><br><span class="line">			ConfigurableEnvironment environment = prepareEnvironment(listeners, applicationArguments);</span><br><span class="line">			configureIgnoreBeanInfo(environment);</span><br><span class="line">			Banner printedBanner = printBanner(environment);</span><br><span class="line">			context = createApplicationContext();</span><br><span class="line">			exceptionReporters = getSpringFactoriesInstances(SpringBootExceptionReporter<span class="class">.<span class="keyword">class</span>,</span></span><br><span class="line">					new Class[] &#123; ConfigurableApplicationContext.class &#125;, context);</span><br><span class="line">			prepareContext(context, environment, listeners, applicationArguments, printedBanner);</span><br><span class="line">			refreshContext(context);</span><br><span class="line">			afterRefresh(context, applicationArguments);</span><br><span class="line">			stopWatch.stop();</span><br><span class="line">			<span class="keyword">if</span> (<span class="keyword">this</span>.logStartupInfo) &#123;</span><br><span class="line">				<span class="keyword">new</span> StartupInfoLogger(<span class="keyword">this</span>.mainApplicationClass).logStarted(getApplicationLog(), stopWatch);</span><br><span class="line">			&#125;</span><br><span class="line">			listeners.started(context);</span><br><span class="line">			callRunners(context, applicationArguments);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">catch</span> (Throwable ex) &#123;</span><br><span class="line">			handleRunFailure(context, ex, exceptionReporters, listeners);</span><br><span class="line">			<span class="keyword">throw</span> <span class="keyword">new</span> IllegalStateException(ex);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			listeners.running(context);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">catch</span> (Throwable ex) &#123;</span><br><span class="line">			handleRunFailure(context, ex, exceptionReporters, <span class="keyword">null</span>);</span><br><span class="line">			<span class="keyword">throw</span> <span class="keyword">new</span> IllegalStateException(ex);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> context;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
 
@@ -157,7 +203,7 @@
   <entry>
     <title>Python</title>
     <url>//Python/</url>
-    <content><![CDATA[<h5 id="1-Python简介"><a href="#1-Python简介" class="headerlink" title="1.Python简介"></a>1.Python简介</h5><p>Python是一种跨平台的<a href="https://baike.baidu.com/item/计算机程序设计语言/7073760" target="_blank" rel="noopener">计算机程序设计语言</a>。是一种面向对象的动态类型语言，最初被设计用于编写自动化脚本(shell)，随着版本的不断更新和语言新功能的添加，越多被用于独立的、大型项目的开发。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h5 id="1-Python简介"><a href="#1-Python简介" class="headerlink" title="1.Python简介"></a>1.Python简介</h5><p>Python是一种跨平台的<a href="https://baike.baidu.com/item/计算机程序设计语言/7073760" target="_blank" rel="noopener">计算机程序设计语言</a>。是一种面向对象的动态类型语言，最初被设计用于编写自动化脚本(shell)，随着版本的不断更新和语言新功能的添加，越多被用于独立的、大型项目的开发。</p>
 <p>博主以前使用Python把喜欢看的小说正本各个章节都下载下来保存到手机上看。主要是手机没有多少流量才这样干的，不过在手机上直接保存为txt文本文件，看起来也挺方便的，还没有广告的打扰，喜欢看小说的朋友都知道，很多小说网站都有广告。</p>
 <p>可能有人会问Python能干什么，Python能实现很多，爬虫、人工智能、自动化测试等等，用Python写爬虫真的很不错。不过它的功能不仅仅是这些，能做的很多。</p>
 <p>下面这张图片是我写这个这篇的时候重新爬了几章。在工作中主要使用的Java，之前爬取的视频是用Java做的，这里就不多做介绍了。</p>
@@ -177,7 +223,7 @@
   <entry>
     <title>Java</title>
     <url>//Java/</url>
-    <content><![CDATA[<h4 id="1-dubbo管控台"><a href="#1-dubbo管控台" class="headerlink" title="1.dubbo管控台"></a>1.dubbo管控台</h4><p>Dubbo管控台可以对注册到zookeeper注册中心的服务或服务消费者进行管理，但管控台是否正常对Dubbo服务没有影响，管控台也不需要高可用，因此可以单节点部署。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h4 id="1-dubbo管控台"><a href="#1-dubbo管控台" class="headerlink" title="1.dubbo管控台"></a>1.dubbo管控台</h4><p>Dubbo管控台可以对注册到zookeeper注册中心的服务或服务消费者进行管理，但管控台是否正常对Dubbo服务没有影响，管控台也不需要高可用，因此可以单节点部署。</p>
 <p>直接把dubbo-admin-2.5.3.war部署到tomcat即可</p>
 <p>配置dubbo.properties：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">dubbo.registry.address&#x3D;zookeeper:&#x2F;&#x2F;192.168.1.101:2181        </span><br><span class="line">dubbo.admin.root.password&#x3D;123456            </span><br><span class="line">dubbo.admin.guest.password&#x3D;123456</span><br></pre></td></tr></table></figure>
@@ -196,7 +242,7 @@
   <entry>
     <title>Hello</title>
     <url>//hello/</url>
-    <content><![CDATA[<p>编程不仅仅是门艺术，更是艺术和思想，学习也是一样，技术分类很多，再加上往深入学习就更多了，而且没门技术都有各自独特的地方，一些小细节等等。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>编程不仅仅是门艺术，更是艺术和思想，学习也是一样，技术分类很多，再加上往深入学习就更多了，而且没门技术都有各自独特的地方，一些小细节等等。</p>
 <p>就算是老天再给500年也不能学完吧，况且技术还是不断在更新，所以最好的学习不是死记硬背，我这记性也不是很好，最近在使用的技术还能记住点，这段时间不使用了，就基本上忘完了。假如下次我还要使用那个技术呢，当然还是能很快使用的，但是要预热下。</p>
 ]]></content>
   </entry>
