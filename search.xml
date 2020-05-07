@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>地图</title>
+    <title>直播服务环境搭建</title>
+    <url>//videos/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>从推流到拉流的基本流程介绍：<br>1.启动虚拟机上搭建直播服务(是开机自动启动的，只需要启动虚拟机即可)<br>2.运行eclipse中的视频采集代码，调用摄像头，并推流到虚拟机<br>3.本地运行直播客户端,代码是h5 video播放视频。<br>4.下面的视频是使用手机录的一段。</p>
+<p>摄像头视频采集和推流，并添加视频水印在左上角。</p>
+<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"autoplay":true,"theme":"#FADFA3","video":{"url":"/images/VID20200507135553.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+]]></content>
+  </entry>
+  <entry>
+    <title>地图应用增加网站的交互性</title>
     <url>//chinamap/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>实时路况信息,绿色的代表通畅<img src="%5Cchinamap%5C%E5%AE%9E%E6%97%B6%E8%B7%AF%E5%86%B5.PNG" alt="实时路况"></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>现在很多网站或者手机APP都有定位，基于位置的聊天软件，以及其它的一些基于位置的业务类型都需要地图展示或者分享你所在的位置。<br>下面我来展示几个地图的使用效果：</p>
+<p>实时路况信息,绿色的代表通畅<img src="/images/%E5%AE%9E%E6%97%B6%E8%B7%AF%E5%86%B5.PNG" alt="实时路况"></p>
 <p>驾车路线规划：</p>
-<p><img src="%5Cchinamap%5Cjiache.PNG" alt="jiache"></p>
+<p><img src="/images/jiache.PNG" alt="jiache"></p>
 <p>骑自行车路线规划：</p>
-<p><img src="%5Cchinamap%5Criding.PNG" alt="riding"></p>
+<p><img src="/images/riding.PNG" alt="riding"></p>
 <p>步行路线规划：</p>
-<p><img src="%5Cchinamap%5Cbuxing.PNG" alt="buxing"></p>
+<p><img src="/images/buxing.PNG" alt="buxing"></p>
 <p>定位：</p>
-<p><img src="%5Cchinamap%5C%E5%AE%9A%E4%BD%8D.PNG" alt="定位"></p>
+<p><img src="/images/%E5%AE%9A%E4%BD%8D.PNG" alt="定位"></p>
 ]]></content>
       <tags>
         <tag>map</tag>
@@ -21,12 +30,12 @@
     <title>music</title>
     <url>//music/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-        <div id="aplayer-OMpgHzad" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-lFwnvkQG" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-OMpgHzad"),
+            element: document.getElementById("aplayer-lFwnvkQG"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -100,20 +109,20 @@
 </ul>
 <p>可以集群部署，可以在不影响在线服务的情况下随时添加和删除集群。</p>
 <p>数据存储:</p>
-<p><img src="%5Cimages%5Cstore.png" alt="store"></p>
+<p><img src="/images/store.png" alt="store"></p>
 <p>访问图片文件效果：</p>
-<p><img src="%5Cimages%5Cfile.png" alt="file"></p>
+<p><img src="/images/file.png" alt="file"></p>
 <p>注意：搭建好FastDFS还不能直接访问文件的，需要安装nginx ，配置模块后才能访问文件。</p>
 <p>接下来就是在项目中使用Java代码操作fastdfs进行文件上传，删除等。</p>
 <p>配置：</p>
 <figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">connect_timeout</span> = <span class="string">2</span></span><br><span class="line"><span class="attr">network_timeout</span> = <span class="string">30</span></span><br><span class="line"><span class="attr">charset</span> = <span class="string">UTF-8</span></span><br><span class="line"><span class="meta">http.tracker_http_port</span> = <span class="string">80</span></span><br><span class="line"><span class="meta">http.anti_steal_token</span> = <span class="string">no</span></span><br><span class="line"><span class="meta">http.secret_key</span> = <span class="string">FastDFS1234567890</span></span><br><span class="line"><span class="attr">tracker_server</span> = <span class="string">192.168.96.128:22122</span></span><br></pre></td></tr></table></figure>
 
 <p>上传方法挺多的，可以选择上传到哪个分组</p>
-<p><img src="%5Cimages%5Cimage-20200323114457908.png" alt="image-20200323114457908"></p>
+<p><img src="/images/image-20200323114457908.png" alt="image-20200323114457908"></p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">         ClientGlobal.init(fileName);</span><br><span class="line">TrackerClient tracker = <span class="keyword">new</span> TrackerClient();</span><br><span class="line">TrackerServer trackerServer = tracker.getTrackerServer();</span><br><span class="line">StorageServer storageServer = <span class="keyword">null</span>;</span><br><span class="line">StorageClient client = <span class="keyword">new</span> StorageClient(trackerServer, storageServer);</span><br><span class="line">NameValuePair nvp[]=<span class="keyword">new</span> NameValuePair[]&#123;</span><br><span class="line">		<span class="keyword">new</span>   NameValuePair(<span class="string">"name"</span>,<span class="string">"template_center_right_bannerbg2.c51ed112.png"</span>),</span><br><span class="line">		<span class="keyword">new</span> NameValuePair(<span class="string">"desc"</span>,<span class="string">"the test file"</span>)</span><br><span class="line">&#125;;</span><br><span class="line">String[] strings = client.upload_file(fileName,<span class="string">"png"</span>,nvp);</span><br></pre></td></tr></table></figure>
 
 <p>上传结果返回分组名称和文件名称</p>
-<p><img src="%5Cimages%5Cre.png" alt="re"></p>
+<p><img src="/images/re.png" alt="re"></p>
 ]]></content>
       <tags>
         <tag>分布式文件部署</tag>
@@ -123,24 +132,27 @@
     <title>gallery</title>
     <url>//gallery/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>过年期间瞎做的一些东西，有手机APP，也有h5</p>
-<p><img src="%5Cimages%5C%E9%A6%96%E9%A1%B5.png" alt="首页"></p>
+<p><img src="/images/%E9%A6%96%E9%A1%B5.png" alt="首页"></p>
 <p>这个是手机APP，聊天使用的WebSocket,能够发送语音，图片，还有语音输入</p>
-<p><img src="%5Cimages%5C%E8%AF%AD%E9%9F%B3%E8%BE%93%E5%85%A5.png" alt="语音输入"></p>
+<p><img src="/images/%E8%AF%AD%E9%9F%B3%E8%BE%93%E5%85%A5.png" alt="语音输入"></p>
 <p>表情包：</p>
-<p><img src="%5Cimages%5C%E8%A1%A8%E6%83%851.png" alt="表情1"></p>
-<p><img src="%5Cimages%5C%E8%A1%A8%E6%83%852.png" alt="表情2"></p>
+<p><img src="/images/%E8%A1%A8%E6%83%851.png" alt="表情1"></p>
+<p><img src="/images/%E8%A1%A8%E6%83%852.png" alt="表情2"></p>
 <p>下面这个是React做的后台管理系统：</p>
-<p><img src="%5Cimages%5Cop.png" alt="op"></p>
-<p><img src="%5Cimages%5Ctongji.png" alt="tongji"></p>
+<p><img src="/images/op.png" alt="op"></p>
+<p><img src="/images/tongji.png" alt="tongji"></p>
 ]]></content>
   </entry>
   <entry>
     <title>SpringCloud</title>
     <url>//SpringCloud/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>SpringCloud很流行，但是公司是否要真的选择SpringCloud 微服务架构还要根据自身情况</p>
-<p>不可盲目追求。有些小项目，根本就不需要使用微服务，如果使用微服务反而会造成更大成本。</p>
-<p>SpringCloud在开发过程中，很多微服务都要启动，有些公司电脑配置也不行，很多公司还是8G内存配置，如果要启动多个项目，机器非常卡，本来SpringBoot，SpringCloud就很吃内存。在一个8g内存的笔记本电脑上同时启动，之前做过一个项目就是8g内存的笔记本启动4~5个微服务，还打开的数据库连接工具，浏览器等，不过jvm 参数调下还是可以的跑的很好的，毕竟只是本地跑。</p>
-<p>现在eureka，feign，zull, hystirx, config 这些都是过时了，可能有些公司还是在用。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ol>
+<li>微服务的选择<br>SpringCloud很流行，但是公司是否要真的选择SpringCloud 微服务架构还要根据自身情况<br>不可盲目追求。有些小项目，根本就不需要使用微服务，如果使用微服务反而会造成更大的开发和时间成本。<br>见过有的外包公司对于微服务拆分太细了，看看业务其实都没有必要弄个微服务。</li>
+</ol>
+<p>SpringCloud在开发过程中，很多微服务都要启动，有些公司电脑配置也不行，很多公司还是8G内存配置，如果要启动多个项目，机器非常卡，本来SpringBoot，SpringCloud就很吃内存。在一个8g内存的笔记本电脑上同时启动，之前做过一个项目就是8g内存的笔记本启动4~5个微服务，还打开的数据库连接工具，浏览器等，做微服务用的是开发单体应用的装备，哪来的效率。</p>
+<p>所以当网站流量很小时，只需一个应用，将所有功能都部署在一起，以减少部署节点和成本和开发成本。<br>流量一般的网站，单体应用部署几个做个负载均衡也差不多可以了</p>
+<p>当垂直应用越来越多，应用之间交互不可避免，将核心业务抽取出来，作为独立的服务，逐渐形成稳定的服务中心，使前端应用能更快速的响应多变的市场需求。就要使用微服务RPC调用。</p>
+<p>2 .技术的选择<br>微服务注册中心eureka，网关zuul,熔断器hystrix，服务配置config，服务调用Feign,等已停止更新<br>目前使用新的组件是:<br>consul,nacos,gateway,sentinel等<br>相比于停更的组件，这些框架都是功能更加完善，比如nacos 不仅仅是注册中心，也是服务配置框架。</p>
 ]]></content>
       <tags>
         <tag>SpringCloud</tag>
@@ -207,7 +219,7 @@
 <p>博主以前使用Python把喜欢看的小说正本各个章节都下载下来保存到手机上看。主要是手机没有多少流量才这样干的，不过在手机上直接保存为txt文本文件，看起来也挺方便的，还没有广告的打扰，喜欢看小说的朋友都知道，很多小说网站都有广告。</p>
 <p>可能有人会问Python能干什么，Python能实现很多，爬虫、人工智能、自动化测试等等，用Python写爬虫真的很不错。不过它的功能不仅仅是这些，能做的很多。</p>
 <p>下面这张图片是我写这个这篇的时候重新爬了几章。在工作中主要使用的Java，之前爬取的视频是用Java做的，这里就不多做介绍了。</p>
-<p><img src="%5Cimages%5Cpa.png" alt="pa"></p>
+<p><img src="/images/pa.png" alt="pa"></p>
 <p>当然python也可以做桌面程序，做web程序。</p>
 <p>下面简单举例web开发，有兴趣的话可以自己运行这段代码。</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#coding:utf-8</span></span><br><span class="line"><span class="keyword">import</span>  web</span><br><span class="line"><span class="keyword">from</span> web <span class="keyword">import</span> form</span><br><span class="line"></span><br><span class="line">urls=(</span><br><span class="line">    <span class="string">'/'</span>,<span class="string">'Index'</span></span><br><span class="line">)</span><br><span class="line">render=web.templete.render(<span class="string">''</span>)</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Index</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">GET</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span>  <span class="string">'Hello world !'</span></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    app=web.application(urls,globals())</span><br><span class="line">    login=form.Form(</span><br><span class="line">        form.Textbox(<span class="string">'username'</span>),</span><br><span class="line">        form.Textbox(<span class="string">'passwd'</span>),</span><br><span class="line">        form.Button(<span class="string">'submit'</span>)</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">app.run()</span><br></pre></td></tr></table></figure>
@@ -221,7 +233,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Java</title>
+    <title>dubbo 管控台</title>
     <url>//Java/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h4 id="1-dubbo管控台"><a href="#1-dubbo管控台" class="headerlink" title="1.dubbo管控台"></a>1.dubbo管控台</h4><p>Dubbo管控台可以对注册到zookeeper注册中心的服务或服务消费者进行管理，但管控台是否正常对Dubbo服务没有影响，管控台也不需要高可用，因此可以单节点部署。</p>
 <p>直接把dubbo-admin-2.5.3.war部署到tomcat即可</p>
@@ -229,8 +241,8 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">dubbo.registry.address&#x3D;zookeeper:&#x2F;&#x2F;192.168.1.101:2181        </span><br><span class="line">dubbo.admin.root.password&#x3D;123456            </span><br><span class="line">dubbo.admin.guest.password&#x3D;123456</span><br></pre></td></tr></table></figure>
 
 <p>运行效果：</p>
-<p><img src="%5Cimages%5Cdu.png" alt="du"></p>
-<p><img src="images%5Csu.png" alt="su"></p>
+<p><img src="/images/du.png" alt="du"></p>
+<p><img src="images/su.png" alt="su"></p>
 ]]></content>
       <categories>
         <category>dubbo</category>
@@ -240,10 +252,16 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello</title>
+    <title>关于学习技术</title>
     <url>//hello/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>编程不仅仅是门艺术，更是艺术和思想，学习也是一样，技术分类很多，再加上往深入学习就更多了，而且没门技术都有各自独特的地方，一些小细节等等。</p>
-<p>就算是老天再给500年也不能学完吧，况且技术还是不断在更新，所以最好的学习不是死记硬背，我这记性也不是很好，最近在使用的技术还能记住点，这段时间不使用了，就基本上忘完了。假如下次我还要使用那个技术呢，当然还是能很快使用的，但是要预热下。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>编程不仅仅是门艺术，更是思想，技术分类很多，再加上往深入学习就更多了，而且没门技术都有各自独特的地方，一些小细节等等。<br>即便是一门语言也是学不完的，况且技术还是不断在更新，所以最好的学习不是死记硬背。<br>我这记性也不是很好，最近在使用的技术还能记住点，这段时间不使用了，就基本上忘完了。所以在面试的时候很吃亏啊，记得之前面试时问我的问题，当时还真是想不起来，可结束后在回家的路上又突然想起来了。</p>
+<p>现在很多人都提倡不要重复造轮子，然而又要问你轮子怎么造，所以造不造是一回事，知道怎么造是另外一回事。<br>那么对于技术人员来说，怎样才能高效的学习呢？</p>
+<ol>
+<li>多总结，归纳</li>
+<li>为故而知新</li>
+<li>多练习</li>
+</ol>
+<p>说起来简单，能坚持做的很难，学习和记忆一样是曲折的过程，当学习效率不高的时候，不妨休息一下，做点其它的事，也许回过头来，你会发现之前没有理解的东西突然就明白了呢！</p>
 ]]></content>
   </entry>
 </search>
